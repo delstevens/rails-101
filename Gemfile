@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'rspec-rails', '~> 3.0'
 gem 'capybara'
+gem 'mongoid', '~> 5.0.0.beta'
 
 group :development, :test do
   gem 'byebug'

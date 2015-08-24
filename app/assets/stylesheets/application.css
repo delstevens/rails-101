@@ -43,6 +43,10 @@ body {
 }
 
 
+ .messages {
+   margin-top: 20px;
+ }
+
 
 .footer {
   position: absolute;

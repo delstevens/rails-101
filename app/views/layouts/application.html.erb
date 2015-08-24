@@ -55,9 +55,22 @@
     </nav>
 
     <main class="container main" role="main">
+      <% if flash.alert %>
+        <div class="messages">
+          <div class="alert alert-danger" role="alert">
+            <%= flash.alert %>
+          </div>
+        </div>
+      <% end %>
+      <% if flash.notice %>
+        <div class="messages">
+          <div class="alert alert-success" role="alert">
+            <%= flash.notice %>
+          </div>
+        </div>
+      <% end %>
       <%= yield %>
     </main>
-
 
     <footer class="footer">
       <div class="container">
@@ -70,7 +83,7 @@
           end %>
           </p>
         </nav>
-        <p class="text-muted copyright">&copy; 2015 Enspiral Dev Academy. Yeah.
+        <p class="text-muted copyright">&copy; 2015 Del <strong>NOT</strong> the Funky Homo-Sapien.
       </div>
     </footer>
 

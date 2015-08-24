@@ -16,4 +16,6 @@ class SiteController < ApplicationController
     @title = "Rails 101 - Terms of Use"
   end
 
+
+
 end

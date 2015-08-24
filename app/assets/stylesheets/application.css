@@ -48,6 +48,15 @@ body {
  }
 
 
+.field_with_errors input,
+.field_with_errors textarea,
+.field_with_errors select {
+  background-color: rgba(255, 100, 100, 0.2);
+  border-color: rgb(255, 0, 0);
+}
+
+
+
 .footer {
   position: absolute;
   bottom: 0;

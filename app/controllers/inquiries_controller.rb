@@ -12,7 +12,7 @@ class InquiriesController < ApplicationController
       flash.notice = "Thank you for sending your message..... '#{params[:name]}'"
       redirect_to root_url
     else
-      flash.now.alert = "There is a problem with your form. Please check it."
+      flash[:notice] = "Sorry, this has not been submitted, #{@inquiry.name}"
       render :new
     end
   end

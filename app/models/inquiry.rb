@@ -7,4 +7,9 @@ class Inquiry
   field :subject, type: String
   field :message, type: String
 
+
+  validates :email, presence: true
+  validates :subject, presence: true, length: { in: 4..32 }
+  validates :message, presence: true, length: { minimum: 12 }
+
 end
